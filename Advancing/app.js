@@ -37,3 +37,11 @@ firstH1Element.remove();
 // firstH1Element.parentElement.removeChild(firstH1Element);
 
 //Move elements
+
+firstParagraph.parentElement.append(firstParagraph);
+
+//innerHTML
+
+console.log(firstParagraph.innerHTML);
+
+firstParagraph.innerHTML = 'Yo! This is <strong>important!</strong>';
