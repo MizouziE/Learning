@@ -80,7 +80,7 @@ function deriveNumberOfDiceRolls () {
     let numberOfRolls = 0;
 
     while (!hasRolledTargetNumber) {
-        const rolledNumber == rollDice();
+        const rolledNumber = rollDice();
         // if (rolledNumber == enteredNumber) {
         //     hasRolledTargetNumber = true;
         // }
