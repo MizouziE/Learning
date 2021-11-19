@@ -1,0 +1,6 @@
+Features
+-Modal overlay form for player name input
+-Restart button to clear the game field
+-Turn based gameplay, automatic switching between players
+-Tracking fields and checking for winner after every Turn
+-Game over window displayed when winner is determined
