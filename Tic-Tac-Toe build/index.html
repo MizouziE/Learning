@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/overlays.css">
+    <link rel="stylesheet" href="styles/config.css">
     <title>Noughts & Crosses</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,15 +16,17 @@
         >
 </head>
 <body>
+    <div id="backdrop"></div>
     <header id="main-header">
         <h1>Play Noughts & Crosses</h1>
         <p>Built with HTML, CSS, JavaScript and lots of stress...</p>
     </header>
     <main>
-        <aside>
+        <aside class="modal" id="config-overlay">
             <h2>Choose your name</h2>
+
             <form>
-                <div>
+                <div class="form-control">
                     <label for="playername">Player name</label>
                     <input type="text" name="playername" id="playername">
                 </div>
