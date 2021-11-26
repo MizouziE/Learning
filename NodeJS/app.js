@@ -12,7 +12,7 @@ app.get('/currenttime', function(req, res) {
 });
 
 app.get('/', function(req, res) {
-    res.send('<form action="/store-user" method="POST"><label>What\'s your name?</label><input type="text" name="username"><button>Save</button></form>')
+    res.send('<form action="/store-user" method="POST"><label>What\'s your name, bro?</label><input type="text" name="username"><button>Save</button></form>')
 });
 
 app.post('/store-user', function(req, res) {
