@@ -1,5 +1,5 @@
 # Learning
-Courseswork
+Coursework
 <br>
 <br>
 
@@ -12,3 +12,9 @@ Courseswork
 <ol>To-Do -> NodeJS</ol>
   <li>Go through other folders to see if servers can be implemented</li>
   <li>Be sure to try other packages and use .gitignore appropriately</li>
+
+  <br>
+  <br>
+  <ol>To-Do -> Dynamic Websites</ol>
+    <li>Actually create a dynamic details page</li>
+    <li>Swap link to website for a link to details page</li>
