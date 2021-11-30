@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Test",
+      "address": "Teststreet 5, Testcity",
+      "cuisine": "Italian",
+      "website": "https://mytest.com",
+      "description": "It's awesome!"
+    },
+    {
+      "name": "Test-Ting",
+      "address": "Test Alley 7, Back-a-yard",
+      "cuisine": "Carribean",
+      "website": "https://tingalingtest.com",
+      "description": "Wickedman tingsdem!"
+    },
+    {
+      "name": "Bar Pepe's",
+      "address": "Polygono, Estepona",
+      "cuisine": "Andalus",
+      "website": "https://queesinternet.que",
+      "description": "Que buena pinta!"
+    }
+  ]
