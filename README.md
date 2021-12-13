@@ -17,4 +17,10 @@ Coursework
   <br>
   <ol>To-Do -> Dynamic Websites</ol>
     <li>Actually create a dynamic details page</li>
-    <li>Swap link to website for a link to details page</li>
+    <li>Swap link to website for a link to details page</li> 
+  
+  <br>
+  <br>
+  <ol>To-Do ->  NodeJS & MongoDB</ol>
+    <li>Have to go back to this one some day</li>
+    <li>When I tried to do it I was working from a Raspberry Pi running a funky ARM64 OS and mongosh was super unusable >:|</li>
