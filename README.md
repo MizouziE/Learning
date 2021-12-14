@@ -24,3 +24,11 @@ Coursework
   <ol>To-Do ->  NodeJS & MongoDB</ol>
     <li>Have to go back to this one some day</li>
     <li>When I tried to do it I was working from a Raspberry Pi running a funky ARM64 OS and mongosh was super unusable >:|</li>
+
+      
+  <br>
+  <br>
+  <ol>To-Do ->  Adding File Uploads</ol>
+    <li>Have to go back to this one some day</li>
+    <li>When I tried to do it I was working from a Raspberry Pi running a funky ARM64 OS and mongosh was super unusable >:|</li>
+    <li>FUCKING YET AGAIN</li>
