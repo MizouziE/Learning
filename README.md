@@ -24,6 +24,9 @@ Coursework
   <ol>To-Do ->  NodeJS & MongoDB</ol>
     <li>Have to go back to this one some day</li>
     <li>When I tried to do it I was working from a Raspberry Pi running a funky ARM64 OS and mongosh was super unusable >:|</li>
+    <li>UPDATE: Currently working on getting ockr container working for this directory alone</li>
+    <li>It's coming along slowly and so far this subfolder contains a working Dockerfile and .yml</li>
+    <li>However, subsequent installation of MongoDB is still required...</li>
 
       
   <br>
