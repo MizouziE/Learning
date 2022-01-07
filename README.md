@@ -27,6 +27,7 @@ Coursework
     <li>UPDATE: Currently working on getting docker container working for this directory alone</li>
     <li>It's coming along slowly and so far this subfolder contains a working Dockerfile and .yml</li>
     <li>However, subsequent fresh installation of working-dir and MongoDB driver (via npm install) is still required...</li>
+    <li>UPDATE: ...on the update. I'm gonna give up with the dev container idea cos it just doesn't work on a raspberry pi running even the arm64 OS. I'll be back with a proper computer next week so I'll just run MongoDB on the big machine</li>
 
       
   <br>
