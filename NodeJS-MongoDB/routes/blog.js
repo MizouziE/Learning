@@ -69,7 +69,7 @@ router.get("/posts/:id", async function (req, res) {
   });
   post.date = post.date.toISOString();
 
-  res.render("post-detail", { post: post });
+  res.render("post-detail", { post: post, comments: null });
 });
 
 router.get("/posts/:id/edit", async function (req, res) {
