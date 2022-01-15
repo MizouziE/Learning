@@ -20,22 +20,71 @@ router.get('/login', function (req, res) {
 router.post('/signup', async function (req, res) {
   const userData = req.body;
   const enteredEmail = userData.email;
-  const confirmEmail = userData['confirm-email'];
+  const enteredConfirmEmail = userData['confirm-email'];
   const enteredPassword = userData.password;
+
+  if (
+    !enteredEmail ||
+    !enteredConfirmEmail ||
+    !enteredPassword ||
+    enteredPassword.trim() < 6 ||
+    enteredEmail !== enteredConfirmEmail ||
+    !enteredEmail.includes('@')
+  ) {
+    console.log('tryin a fuckery!');
+    return res.redirect('/signup');
+  }
+
+  const existingUser = await db
+    .getDb()
+    .collection('users')
+    .findOne({ email: enteredEmail });
+
+    if (existingUser) {
+      console.log('User already exists!');
+      return res.redirect('/signup');
+    }
 
   const hashedPassword = await bcrypt.hash(enteredPassword, 12);
 
   const user = {
     email: enteredEmail,
-    password: hashedPassword
+    password: hashedPassword,
   };
-  
+
   await db.getDb().collection('users').insertOne(user);
 
   res.redirect('/login');
 });
 
-router.post('/login', async function (req, res) {});
+router.post('/login', async function (req, res) {
+  const userData = req.body;
+  const enteredEmail = userData.email;
+  const enteredPassword = userData.password;
+
+  const existingUser = await db
+    .getDb()
+    .collection('users')
+    .findOne({ email: enteredEmail });
+
+  if (!existingUser) {
+    console.log('Nuhbudy cyaan crass it!');
+    return res.redirect('/login');
+  }
+
+  const passwordsMatch = await bcrypt.compare(
+    enteredPassword,
+    existingUser.password
+  );
+
+  if (!passwordsMatch) {
+    console.log('Nuhbudy cyaan match it!');
+    return res.redirect('/login');
+  }
+
+  console.log('We good!');
+  res.redirect('/admin');
+});
 
 router.get('/admin', function (req, res) {
   res.render('admin');
