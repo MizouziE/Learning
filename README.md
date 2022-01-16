@@ -36,3 +36,9 @@ Coursework
     <li>Have to go back to this one some day</li>
     <li>When I tried to do it I was working from a Raspberry Pi running a funky ARM64 OS and mongosh was super unusable >:|</li>
     <li>FUCKING YET AGAIN</li>
+
+      
+  <br>
+  <br>
+  <ol>To-Do ->  User-authentication</ol>
+    <li>Add authorization and dependable nav views (last few lessons)</li>
