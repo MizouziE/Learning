@@ -27,7 +27,10 @@ app.use(session({
   secret: 'super-secret',
   resave: false,
   saveUninitialized: false,
-  store: sessionStore
+  store: sessionStore,
+  cookie: {
+    maxAge: 30 * 24 * 60 * 60 * 1000
+  } // doesn't need to be set cos it will clear whenever the browser is closed, here it's just to show how to calulate it
 }));
 
 app.use(demoRoutes);
