@@ -9,7 +9,9 @@
       <ol>
         <% for (const comment of comments) { %>
           <li>
-            <%- comment.text %>
+            <%= comment.text %> 
+            <!-- the above ejs tag was just a dash before and was therefore vulnerable
+            now it is an equals sign and this escapes the content -->
           </li>
         <% } %>
       </ol>
