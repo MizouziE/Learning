@@ -23,4 +23,9 @@ Coursework
   <br>
   <br>
   <ol>To-Do ->  User-authentication</ol>
-    <li>Add authorization and dependable nav views (last few lessons)</li>
+    <li>Add authorization and dependable nav views (last few lessons)</li>  <br>
+ 
+ 
+  <br>
+  <ol>To-Do ->  Refactoring</ol>
+    <li>Go thru all the auth routes and refactor</li>

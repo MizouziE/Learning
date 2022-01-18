@@ -9,6 +9,8 @@ const db = require('./data/database');
 const authRoutes = require('./routes/auth');
 const blogRoutes = require('./routes/blog');
 const authMiddleware = require('./middleware/auth-middleware');
+const addCSRFTokenMiddlesware = require('./middleware/csrf-token-middleware');
+const addCSRFToken = require('./middleware/csrf-token-middleware');
 
 const mongoDbSessionStore = sessionConfig.createSessionStore(session);
 
@@ -23,6 +25,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(session(sessionConfig.createSessionConfig(mongoDbSessionStore)));
 app.use(csrf());
 
+app.use(addCSRFTokenMiddlesware);
 app.use(authMiddleware);
 
 app.use(blogRoutes);
