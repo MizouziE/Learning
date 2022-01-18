@@ -1,0 +1,32 @@
+<%- include('includes/head.ejs', { title: 'Discussion' }) %>
+<link rel="stylesheet" href="/styles/forms.css">
+</head>
+<body>
+  <%- include('includes/header.ejs') %>
+  <main>
+    <h1>Discuss!</h1>
+    <section>
+      <ol>
+        <% for (const comment of comments) { %>
+          <li>
+            <%= comment.text %> 
+            <!-- the above ejs tag was just a dash before and was therefore vulnerable
+            now it is an equals sign and this escapes the content -->
+          </li>
+        <% } %>
+      </ol>
+    </section>
+    <section>
+
+      <form action="/discussion/comment" method="POST">
+        <!-- csrf token would go here -->
+        <div class="form-control">
+          <label for="comment">My Comment</label>
+          <textarea name="comment" id="comment" rows="5"></textarea>
+        </div>
+        <button class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
