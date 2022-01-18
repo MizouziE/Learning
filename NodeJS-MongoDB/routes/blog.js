@@ -69,7 +69,7 @@ router.get("/posts/:id", async function (req, res) {
   });
   post.date = post.date.toISOString();
 
-  res.render("post-detail", { post: post });
+  res.render("post-detail", { post: post, comments: null });
 });
 
 router.get("/posts/:id/edit", async function (req, res) {
@@ -112,6 +112,28 @@ router.post("/posts/:id/delete", async function (req, res) {
     .collection("posts")
     .deleteOne({ _id: postId });
   res.redirect("/posts");
+});
+
+router.get("/posts/:id/comments", async function (req, res) {
+  const postId = new ObjectId(req.params.id);
+  const comments = await db
+    .getDb()
+    .collection('comments')
+    .find({ postId: postId })
+    .toArray();
+
+  res.json(comments);
+});
+
+router.post('/posts/:id/comments', async function (req,res) {
+  const postId = new ObjectId(req.params.id);
+  const newComment = {
+    postId: postId,
+    title: req.body.title,
+    text: req.body.text,
+  };
+  await db.getDb().collection('comments').insertOne(newComment);
+  res.json({message: 'You said your piece'});
 });
 
 module.exports = router;
