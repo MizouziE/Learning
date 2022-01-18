@@ -12,7 +12,7 @@ router.get('/discussion', async function (req, res) {
   let filter = '';
 
   if (req.query.author) {
-    filter = `WHERE author = "${req.query.author}"`; 
+    filter = `WHERE author = "${req.query.author}"`; // this line here is a problem too, use ? placeholder to sanitize instead and then pass thru the value furhter down
   }
 
   const query = `SELECT * FROM comments ${filter}`;

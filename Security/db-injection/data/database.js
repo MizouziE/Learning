@@ -5,7 +5,7 @@ const pool = mysql.createPool({
   database: 'security',
   user: 'root',
   password: 'your-pw',
-  multipleStatements: true
+  //multipleStatements: true // This line here leaves you open to sql-injection attacks
 })
 
 module.exports = pool;
