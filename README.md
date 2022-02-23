@@ -1,31 +1,32 @@
 # Learning
-Coursework
-<br>
-<br>
+## Coursework
+### To-Do -> noughts and crosses
+- [ ]You could add a set/match counter to track best 2 out of 3
+- [ ]Change the colour scheme and styling/layout
 
-<ol>To-Do -> noughts and crosses</ol>
-  <li>You could add a set/match counter to track best 2 out of 3</li>
-  <li>Change the colour scheme and styling/layout</li>
+### To-Do -> NodeJS
+- [ ]Go through other folders to see if servers can be implemented
+- [ ]Be sure to try other packages and use .gitignore appropriately
 
-<br>
-<br>
-<ol>To-Do -> NodeJS</ol>
-  <li>Go through other folders to see if servers can be implemented</li>
-  <li>Be sure to try other packages and use .gitignore appropriately</li>
+### To-Do -> Dynamic Websites
+- [ ]Actually create a dynamic details page
+- [ ]Swap link to website for a link to details page
 
-  <br>
-  <br>
-  <ol>To-Do -> Dynamic Websites</ol>
-    <li>Actually create a dynamic details page</li>
-    <li>Swap link to website for a link to details page</li> 
+### To-Do ->  NodeJS & MongoDB
+- [x]When I tried to do it I was working from a Raspberry Pi running a funky ARM64 OS and mongosh was super unusable :space_invader:
+- [x]UPDATE: Currently working on getting docker container working for this directory alone
+- [x]It's coming along slowly and so far this subfolder contains a working Dockerfile and .yml
+- [x]However, subsequent fresh installation of working-dir and MongoDB driver (via npm install) is still required...
+- [x]UPDATE: ...on the update. I'm gonna give up with the dev container idea cos it just doesn't work on a raspberry pi running even the arm64 OS. I'll be back with a proper computer next week so I'll just run MongoDB on the big machine
+- [ ]**Have to go back to this one some day**
 
-      
-  <br>
-  <br>
-  <ol>To-Do ->  User-authentication</ol>
-    <li>Add authorization and dependable nav views (last few lessons)</li>  <br>
- 
- 
-  <br>
-  <ol>To-Do ->  Refactoring</ol>
-    <li>Go thru all the auth routes and refactor</li>
+### To-Do ->  Adding File Uploads
+-[x]When I tried to do it I was working from a Raspberry Pi running a funky ARM64 OS and mongosh was super unusable :japanese_goblin:
+-[x]FUCKING YET AGAIN
+-[ ]**Have to go back to this one some day**
+
+### To-Do ->  User-authentication
+- [ ]Add authorization and dependable nav views (last few lessons) 
+
+### To-Do ->  Refactoring
+- [ ]Go thru all the auth routes and refactor
