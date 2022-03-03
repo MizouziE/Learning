@@ -1,4 +1,7 @@
 # Learning
+
+<sub>Continual development of We</sub>b<sup>ǝW ɟo ʇuǝɯdolǝʌǝp lɐnuıʇuoƆ</sup>
+
 ## Coursework
 ### To-Do -> [noughts and crosses](https://github.com/MizouziE/Learning/tree/master/Noughts%20and%20Crosses)
 - [ ] You could add a set/match counter to track best 2 out of 3
